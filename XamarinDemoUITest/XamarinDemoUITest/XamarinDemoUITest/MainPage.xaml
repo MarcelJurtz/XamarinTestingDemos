@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinDemoUITest"
+             x:Class="XamarinDemoUITest.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Entry
+            x:Name="txtValueA"
+            AutomationId="txtValueA"
+            FontSize="Medium" />
+        <Entry
+            x:Name="txtValueB"
+            AutomationId="txtValueB"
+            FontSize="Medium" />
+        <Button
+            Text="Add"
+            AutomationId="cmdAdd"
+            FontSize="Medium"
+            Clicked="cmdAddClicked" />
+        <Button
+            Text="Multiply"
+            AutomationId="cmdMultiply"
+            FontSize="Medium"
+            Clicked="cmdMultiplyClicked" />
+        <Label 
+            x:Name="lblResult"
+            AutomationId="lblResult"
+            FontSize="Medium" />
+    </StackLayout>
+
+</ContentPage>
